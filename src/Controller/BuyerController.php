@@ -20,7 +20,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class BuyerController extends AbstractController
 {
     /**
-     * @Route("/showproduct", name="buyers")
+     * @Route("/showproduct", name="show.product")
      */
     public function showProduct()
     {
@@ -33,7 +33,7 @@ class BuyerController extends AbstractController
     }
 
     /**
-     * @Route("/showbuyer", name="buyerss")
+     * @Route("/showbuyer", name="show.buyer")
      */
     public function showBuyer()
     {

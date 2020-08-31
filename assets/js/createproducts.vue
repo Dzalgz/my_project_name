@@ -14,7 +14,7 @@
       <label for="phone_number">Номер телефона</label>
       <input id="phone_number" v-model="phone_number" type="text" pattern="[1-9]{10}" title="Формат: (999) 999 99 99" placeholder="(___)-___-__-__" maxlength="10" value="+7" required><br>
       <label for="email">E-mail</label>
-      <input id="email" v-model="email" type="email" title="Формат: e-mail должен содержать @ и точку" placeholder="email" required><br>
+      <input id="email" v-model="email" type="email" title="Формат: e-mail должен содержать @ и точку" placeholder="Ваш e-mail" required><br>
       <label for="product_type">Модель товара</label>
       <select id="product_type" name="Product_type" v-model="product_type" type="text" required>
         <option value="iphon 11">iphon 11</option>
@@ -25,7 +25,7 @@
       </select>
      <br>
       <label for="quantity">Количество товара</label>
-      <input id="quantity" v-model="quantity" type="text" title="Формат: введите количество до 9" placeholder="Колво" required><br>
+      <input id="quantity" v-model="quantity" type="text" title="Формат: введите количество до 9" placeholder="Введите количество" required><br>
       <input type="submit" value="Создать заказ">
     </form>
   </div>
@@ -67,4 +67,3 @@ export default {
   },
 }
 </script>
-<!--pattern="[0-9]"-->
